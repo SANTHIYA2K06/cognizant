@@ -1,0 +1,26 @@
+<form id="registrationForm">
+
+<input type="text" placeholder="Enter Name" required autofocus>
+<input type="email" placeholder="Enter Email" required>
+<input type="date" required>
+
+<select>
+
+<option>Music</option>
+<option>Workshop</option>
+<option>Sports</option>
+
+</select>
+
+<textarea placeholder="Enter Message"></textarea>
+<button type="submit"> Submit</button>
+<output id="outputMsg"></output>
+
+</form>
+
+<script>
+    document.getElementById("registrationForm").addEventListener("submit",function(e){
+        e.preventDefault();
+        document.getElementById("outputMsg").innerHTML="Registration Successful";
+});
+</script>

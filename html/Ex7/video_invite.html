@@ -1,0 +1,13 @@
+<video controls width="500" oncanplay="videoReady()">
+<source src="videos/promo.mp4" type="video/mp4">
+</video>
+
+<p id="videoStatus"></p>
+<script>
+    function videoReady(){
+        document.getElementById("videoStatus").innerHTML="Video ready to play";
+}
+window.onbeforeunload=function(){
+return "Leave page?";
+};
+</script>

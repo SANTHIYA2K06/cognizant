@@ -1,0 +1,76 @@
+<input
+type="text"
+id="phone"
+placeholder="Phone Number">
+
+<select id="eventType">
+
+<option value="Music">Music</option>
+<option value="Workshop">Workshop</option>
+<option value="Sports">Sports</option>
+</select>
+
+<p id="fee"></p>
+
+<textarea id="feedback">
+</textarea>
+
+<p>
+Characters:
+<span id="count">0</span>
+</p>
+
+<img
+src="images/event1.jpg"
+id="eventImage"
+width="200">
+
+<button onclick="showMessage()">
+Submit
+</button>
+<script>
+
+    document
+.getElementById("phone")
+.addEventListener("blur",function(){
+
+if(this.value.length!=10){
+
+alert("Invalid Phone Number");
+
+}
+
+});
+
+document
+.getElementById("eventType")
+.addEventListener("change",function(){
+
+document.getElementById("fee")
+.innerHTML="Fee ₹100";
+
+});
+
+function showMessage(){
+
+alert("Feedback Submitted");
+
+}
+
+document
+.getElementById("eventImage")
+.ondblclick=function(){
+
+this.style.width="350px";
+
+};
+
+document
+.getElementById("feedback")
+.addEventListener("keyup",function(){
+
+document.getElementById("count")
+.innerHTML=this.value.length;
+
+});
+</script>

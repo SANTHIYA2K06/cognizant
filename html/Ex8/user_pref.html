@@ -1,0 +1,31 @@
+<select id="eventPreference">
+
+<option value="Music">Music</option>
+<option value="Workshop">Workshop</option>
+
+</select>
+
+<button onclick="savePreference()"> Save Preference</button>
+<button onclick="clearData()">Clear Preference</button>
+
+<script>
+    function savePreference(){
+
+        let value=document.getElementById("eventPreference").value;
+        localStorage.setItem("preferredEvent",value);
+        sessionStorage.setItem("tempEvent",value);
+}
+
+    window.onload=function(){
+
+    let saved=localStorage.getItem("preferredEvent");
+    if(saved){
+        document.getElementById("eventPreference").value=saved;
+    }
+    };
+
+    function clearData(){
+        localStorage.clear();
+        sessionStorage.clear();
+    }
+</script>
