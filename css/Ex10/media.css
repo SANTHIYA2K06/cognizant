@@ -1,0 +1,29 @@
+/* Desktop Navigation */
+
+nav ul{
+
+    display:flex;
+
+}
+
+/* Responsive Layout */
+
+@media screen and (max-width:768px){
+    nav ul{
+        flex-direction:column;
+    }
+
+    h1{
+
+        font-size:24px;
+
+    }
+
+    img{
+
+        width:120px;
+        height:100px;
+
+    }
+
+}

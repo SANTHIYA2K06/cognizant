@@ -1,0 +1,32 @@
+body{
+    background-color:#f4f4f4;
+    background-image:url("images/bg.jpg");
+    background-size:cover;
+}
+
+/* HEX Color */
+
+h1{
+    color:#003366;
+}
+
+/* RGBA Color */
+
+.eventCard{
+    background-color:rgba(0,123,255,0.2);
+}
+
+/* Gradient Header */
+
+.section-title{
+
+    background:linear-gradient(
+    to right,
+    #2196f3,
+    #4caf50
+    );
+
+    color:white;
+    padding:15px;
+
+}

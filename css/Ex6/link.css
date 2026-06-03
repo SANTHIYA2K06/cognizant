@@ -1,0 +1,35 @@
+/* Link States */
+
+a:link{
+    color:blue;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+    color:purple;
+}
+
+/* Navigation List */
+
+nav ul{
+
+    list-style-type:none;
+    list-style-position:inside;
+
+}
+
+/* List Items */
+
+nav li{
+
+    padding:10px;
+    margin:5px;
+
+}

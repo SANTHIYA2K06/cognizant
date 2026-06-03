@@ -1,0 +1,20 @@
+/* Style for Main CTA Button */
+
+.cta-button{
+
+    background-color:#007BFF;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+
+}
+
+/* Navigation Styles */
+
+nav{
+
+    background-color:#333;
+    padding:15px;
+
+}

@@ -1,0 +1,27 @@
+/* Event Card */
+
+.eventCard{
+
+    border:2px solid #333;
+    padding:20px;
+    margin:15px;
+
+}
+
+/* Form Field Outline */
+
+input:focus{
+    outline:3px solid blue;
+}
+
+/* Hidden Element */
+
+.hiddenElement{
+    visibility:hidden;
+}
+
+/* Removed Element */
+
+.noneElement{
+    display:none;
+}
